@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'scala'
+    }
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+ext {
+    scalaBinaryVersion = "2.13"
+}
+dependencies {
+}
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.8'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
